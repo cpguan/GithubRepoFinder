@@ -34,6 +34,36 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+
+# Lab 5 - *GitHubRepoFinder*
+
+**GitHubRepoFinder*** is a GitHub Repo search app using the [GitHub API](https://developer.github.com/v3/search/#search-repositories).
+
+Time spent: **3** hours spent in total
+
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] Add setting view
+- [x] Add setting for the minimum number of stars a repo needs 
+
+Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
+
+1.
+2.
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/RObwuJJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough 3' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+## Notes
+
+Describe any challenges encountered while building the app.
 ## License
 
     Copyright [2017] [Pan (Chupeng) Guan]
