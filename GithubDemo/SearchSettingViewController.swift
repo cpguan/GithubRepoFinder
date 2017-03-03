@@ -12,6 +12,7 @@ class SearchSettingViewController: UIViewController,SettingsPresentingViewContro
 
     weak var delegate: SettingsPresentingViewControllerDelegate?
     var settings: GithubRepoSearchSettings?
+    var preSetValue = 10
     
     @IBOutlet weak var miniStarSlide: UISlider!
     
@@ -21,6 +22,7 @@ class SearchSettingViewController: UIViewController,SettingsPresentingViewContro
         super.viewDidLoad()
         miniStarValue.text = "\(settings!.minStars)"
         miniStarSlide.value = Float(settings!.minStars)
+        preSetValue = Int(miniStarSlide.value)
 
         // Do any additional setup after loading the view.
     }
@@ -43,6 +45,10 @@ class SearchSettingViewController: UIViewController,SettingsPresentingViewContro
     
     @IBAction func cancelSettings(_ sender: Any) {
         self.delegate?.didCancelSettings()
+        let preVal = preSetValue
+        miniStarValue.text = "\(preVal)"
+        miniStarSlide.value = Float(preVal)
+        settings?.minStars = preVal
         self.dismiss(animated: true, completion: nil)
     }
     
